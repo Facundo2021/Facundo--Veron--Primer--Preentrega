@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "titulo": "Procesador Intel Core i7",
+      "descripcion": "Potente procesador para rendimiento de alta gama",
+      "precio": 299.99,
+      "thumbnail": "#imagen",
+      "code": "CPU001",
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "titulo": "GPU NVIDIA GeForce RTX 3080",
+      "descripcion": "Tarjeta gráfica para juegos y renderizado de última generación",
+      "precio": 699.99,
+      "thumbnail": "#imagen",
+      "code": "GPU002",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "titulo": "Placa Madre ASUS ROG Strix B550",
+      "descripcion": "Motherboard de alta calidad para procesadores AMD",
+      "precio": 159.99,
+      "thumbnail": "#imagen",
+      "code": "MTH003",
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "titulo": "Procesador AMD Ryzen 9 5900X",
+      "descripcion": "Potente procesador de la serie Ryzen para rendimiento extremo",
+      "precio": 449.99,
+      "thumbnail": "#imagen",
+      "code": "CPU004",
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "titulo": "GPU AMD Radeon RX 6800 XT",
+      "descripcion": "Tarjeta gráfica AMD para juegos de alta calidad",
+      "precio": 549.99,
+      "thumbnail": "#imagen",
+      "code": "GPU005",
+      "stock": 25
+    },
+    {
+      "id": 6,
+      "titulo": "Placa Madre MSI MPG B550 Gaming Edge WiFi",
+      "descripcion": "Motherboard con características gaming y conectividad WiFi",
+      "precio": 179.99,
+      "thumbnail": "#imagen",
+      "code": "MTH006",
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "titulo": "Procesador Intel Core i5",
+      "descripcion": "Procesador de gama media para rendimiento equilibrado",
+      "precio": 199.99,
+      "thumbnail": "#imagen",
+      "code": "CPU007",
+      "stock": 40
+    },
+    {
+      "id": 8,
+      "titulo": "GPU NVIDIA GeForce GTX 1660 Super",
+      "descripcion": "Tarjeta gráfica para juegos de gama media",
+      "precio": 249.99,
+      "thumbnail": "#imagen",
+      "code": "GPU008",
+      "stock": 18
+    },
+    {
+      "id": 9,
+      "titulo": "Placa Madre ASRock B450M Pro4",
+      "descripcion": "Motherboard económica para procesadores AMD",
+      "precio": 89.99,
+      "thumbnail": "#imagen",
+      "code": "MTH009",
+      "stock": 22
+    },
+    {
+      "id": 10,
+      "titulo": "Procesador AMD Ryzen 5 3600",
+      "descripcion": "Procesador de gama media para tareas cotidianas y gaming",
+      "precio": 179.99,
+      "thumbnail": "#imagen",
+      "code": "CPU010",
+      "stock": 33
+    }
+  ]
