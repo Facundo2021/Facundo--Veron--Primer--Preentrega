@@ -10,12 +10,13 @@ const PORT = 9090;
 
 app.get('/products', async (req, res) => {
     try {
-        const arrayProductos = await manager.leerArchivo();
+        const arrayProductos = await manager.getProducts();
 
         let limit = parseInt(req.query.limit)
 
         if (limit) {
-            const arrayConLimit = productos.slice(0, limit)
+            const arrayConLimit = arrayProductos.slice(0, limit)
+            
             return res.send(arrayConLimit);
         } else {
             return res.send(arrayProductos);
