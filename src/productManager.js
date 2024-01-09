@@ -1,9 +1,44 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
 class ProductManager {
-    constructor(filePath) {
-        this.path = filePath;
-        this.products = this.loadProducts();
+    static ultId = 0;
+
+    constructor(Path) {
+        this.path = Path;
+        this.products = [];
+    }
+
+    async addProduct(nuevoObjeto){
+        let{
+            title,
+            description,
+            price,
+            img,
+            code,
+            stock,
+        } = nuevoObjeto;
+
+        if (!title || !description || !price || !img || !code || !stock ){
+            console.log("todos los campos deben ser obligatorios");
+            return;
+        }
+
+        if (this.products.some (item => item.code === code)){
+            console.log("el codigo debe ser unico")
+        }
+        
+        const newProduct = {
+            Id: ++ProductManager.ultId,
+            title,
+            description,
+            price,
+            img,
+            code,
+            stock
+        }
+        this.products.push(newProduct);
+
+        await this.saveProducts(this.products);
     }
 
     loadProducts() {
@@ -16,7 +51,7 @@ class ProductManager {
         }
     }
     
-    saveProducts() {
+     async saveProducts() {
         try {
             const data = JSON.stringify(this.products, null, 2);
             fs.writeFileSync(this.path, data);
