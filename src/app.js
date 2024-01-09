@@ -2,7 +2,7 @@ const ProductManager = require("./productManager")
 
 const express = require("express");
 
-const manager = new ProductManager("productos.json")
+const manager = new ProductManager("./productos.json")
 
 const app = express();
 
